@@ -13,7 +13,7 @@
     
 # 開発履歴
 [2017/10/15]
-*mailtool.py
+* mailtool.py
     * 関数[ipsend(mailaddr,bodytext)]
         * 引数mailaddr宛にbodytextをgmail経由でメールする。
 [2017/10/14]
