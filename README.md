@@ -10,12 +10,28 @@
     * Windows10(1703) Home
 * 開発言語
     * Python 3.6
-    
+
+#必要なもの
+* Gmailアカウント
+* URLが記載されたファイル
+
+# URLが記載されたファイルについて
+* テキスト形式で作成してください
+* グローバルIPが確認できるサイトのURLを1行ずつ記載してください
+    * 参考)
+      ip_kakunin_url.txt
+
 # 開発履歴
 [2017/10/15]
 * mailtool.py
-    * 関数[ipsend(mailaddr,bodytext)]
-        * 引数mailaddr宛にbodytextをgmail経由でメールする。
+    * 関数[def sendip(sendaddr,ipaddr)]
+        * 引数sendaddr宛に引数ipaddrを本文へ編集し、gmail経由でメールする。
+* getGlobalIPv4_run.py
+    * 実行用スクリプト
+        * URLが記載されたファイル(ファイルパスはオウンコーディング)を読み込む
+        * ファイル内に記載された順にURLへアクセスし、Webページを取得する
+        * IPアドレスらしきものを見つけたら、Webページの取得は終了
+        * 指定した宛先へ、IPアドレスを記載したメールを送付
 [2017/10/14]
 * webtool.py
     * 関数[getHtml(url)]
@@ -31,3 +47,4 @@
     * 関数[file_view()]
         * 関数[read_file()]テスト用。
         * 読み込んだファイルの中身をコンソールへ表示する。
+
