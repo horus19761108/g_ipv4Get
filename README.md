@@ -23,6 +23,11 @@
       ip_kakunin_url.txt
 
 # 開発履歴
+[2017/10/20]
+* webtool.py
+    * 関数[getIpv4(siteurl)]
+        * 正規表現部分のバグ修正
+          123などが12として抽出されるため、第4オクテット部分の表現を降順に並べ替え。
 [2017/10/15]
 * mailtool.py
     * 関数[def sendip(sendaddr,ipaddr)]
