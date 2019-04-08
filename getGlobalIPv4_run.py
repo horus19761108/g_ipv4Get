@@ -13,8 +13,12 @@ for i in data:
         break
 
 if ipaddr:
-    sendaddr = 'rcpt@email'
-    try:
-        mailtool.sendip(sendaddr,ipaddr)
-    except:
-        print('Don\'t send to mail...')
+    pass
+else:
+    ipAddr = 'Not Global-IPv4-Kakunin-Site'
+
+sendaddr = 'rcpt@email'
+try:
+    mailtool.sendip(sendaddr,ipaddr)
+except:
+    print('Don\'t send to mail...')

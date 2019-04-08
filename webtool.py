@@ -17,8 +17,6 @@ def getIpv4(siteurl):
         search_result = ipv4_pattan.search(html.text)
         if search_result:
             ipAddr = search_result.group()
-        else:
-            ipAddr = 'Not Global-IPv4-Kakunin-Site'
 
     return ipAddr
      
